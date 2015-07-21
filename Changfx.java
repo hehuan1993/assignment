@@ -1,3 +1,6 @@
+
+
+	
 package Claa;
 import java.util.Scanner;
 class Changfx_1 {
@@ -49,20 +52,16 @@ class Changfx {
 		int width = in.nextInt();
 		System.out.print("请输入颜色");
 		String color = in.next();
-		Changfx_1 cha1 = new Changfx_1(20, 20, "red");
-		cha1.getArea();
+		Changfx_1 cha1 = new Changfx_1(length, width, color);
 		System.out.println("长:" + length + " 宽：" + width + " 颜色：" + color
-				+ " 面积" + length * width);
+				+ " 面积" + cha1.getArea());
 		Changfx_1 cha2 = new Changfx_1(length, color);
-		cha2.getArea();
 		System.out.println("长:" + length + " 宽：" + width + " 颜色：" + color
 				+ " 面积" + length * width);
 		Changfx_1 cha3 = new Changfx_1(length);
-		cha3.getArea();
 		System.out.println("长:" + length + " 宽：" + width + " 颜色：" + color
 				+ " 面积" + length * width);
 		Changfx_1 cha4 = new Changfx_1();
-		cha4.getArea();
 		System.out.println("长:" + length + " 宽：" + width + " 颜色：" + color
 				+ " 面积" + length * width);
 		Changfx_2 ss = new Changfx_2(length, color);
